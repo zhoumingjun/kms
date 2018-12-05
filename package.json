@@ -3,21 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@martin_hotell/rex-tils": "^2.1.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts-ts": "3.1.0"
+    "react-redux": "^5.1.1",
+    "react-scripts-ts": "3.1.0",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-saga": "^0.16.2"
   },
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@storybook/addon-actions": "^4.0.11",
+    "@storybook/addon-info": "^4.0.11",
+    "@storybook/addon-links": "^4.0.11",
+    "@storybook/addons": "^4.0.11",
+    "@storybook/react": "^4.0.11",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
+    "@types/react-redux": "^6.0.10",
+    "@types/storybook__addon-actions": "^3.4.1",
+    "@types/storybook__addon-links": "^3.3.3",
+    "@types/storybook__react": "^4.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "jest": "^23.6.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "ts-jest": "^23.10.5",
     "typescript": "^3.2.1"
   }
 }

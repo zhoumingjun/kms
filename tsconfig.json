@@ -1,15 +1,12 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
-    "lib": ["es6", "dom"],
     "sourceMap": true,
-    "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -17,7 +14,23 @@
     "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true, // no errors with commonjs modules interop
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom"
+    ],
+    "allowJs": false,
+    "rootDirs": [
+      "src",
+      "stories"
+    ],
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "exclude": [
     "node_modules",
